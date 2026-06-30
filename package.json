@@ -1,0 +1,29 @@
+{
+  "name": "@lamatic/mcp",
+  "version": "1.0.0",
+  "description": "Unified Lamatic MCP server — manage your org (dev_*), execute deployed flows (graph_*), and query Lamatic docs (docs_*) via AI agents.",
+  "main": "server.js",
+  "bin": {
+    "lamatic-mcp": "./server.js"
+  },
+  "files": [
+    "server.js",
+    "utils/",
+    "tools/",
+    "README.md"
+  ],
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": ["mcp", "model-context-protocol", "lamatic", "ai-agent", "claude"],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "axios": "^1.7.0",
+    "fs-extra": "^11.2.0",
+    "zod": "^3.23.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
