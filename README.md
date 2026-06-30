@@ -1,6 +1,6 @@
 # @lamatic/mcp
 
-Unified Lamatic MCP server. Merges `@lamatic/dev-mcp`, `@lamatic/graph-mcp`, and a proxy to the hosted Lamatic Docs MCP into one server, with a fourth `kit_*` namespace reserved for the not-yet-scoped AgentKit MCP.
+Unified Lamatic MCP server. Merges `@lamatic/dev-mcp`, `@lamatic/graph-mcp`, a proxy to the hosted Lamatic Docs MCP into one server, and AgentKit MCP.
 
 ## Install
 
