@@ -195,3 +195,33 @@ cd lamatic-mcp
 npm install
 node server.js
 ```
+## Windows setup
+
+`npx -y @lamatic/mcp` won't work on Windows because npx can't determine the executable. Use the local path approach instead:
+
+1. Clone the repo:
+```bash
+git clone https://github.com/Lamatic/Lamatic-MCP.git
+cd Lamatic-MCP
+npm install
+```
+
+2. Add to your `claude.json` or `claude_desktop_config.json`:
+```json
+"lamatic": {
+  "type": "stdio",
+  "command": "node",
+  "args": ["C:/path/to/Lamatic-MCP/server.js"],
+  "env": {}
+}
+```
+
+Mac/Linux users can use npx directly:
+```json
+"lamatic": {
+  "type": "stdio",
+  "command": "npx",
+  "args": ["-y", "@lamatic/mcp"],
+  "env": {}
+}
+```
