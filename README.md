@@ -195,7 +195,3 @@ cd lamatic-mcp
 npm install
 node server.js
 ```
-
-## License
-
-[MIT](./LICENSE)
