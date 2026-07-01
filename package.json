@@ -1,11 +1,8 @@
 {
   "name": "@lamatic/mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Unified Lamatic MCP server — manage your org (dev_*), execute deployed flows (graph_*), query Lamatic docs (docs_*), and run AgentKit flows (kit_*) via AI agents.",
   "main": "server.js",
-  "bin": {
-    "lamatic-mcp": "./server.js"
-  },
   "files": [
     "server.js",
     "utils/",
