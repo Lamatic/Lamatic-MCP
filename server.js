@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+const { version } = require('./package.json');
 
 const { McpServer } = require('@modelcontextprotocol/sdk/server/mcp.js');
 const { StdioServerTransport } = require('@modelcontextprotocol/sdk/server/stdio.js');
@@ -10,7 +11,7 @@ const { registerKitTools } = require('./tools/kit');
 
 const server = new McpServer({
   name: 'lamatic-mcp',
-  version: '1.0.0',
+  version,
 });
 
 registerDevTools(server);
